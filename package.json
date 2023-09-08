@@ -1,0 +1,24 @@
+{
+  "name": "rebrander",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node index.js",
+    "build": "rollup -c",
+    "serve": "rollup -c && node bundle.js",
+    "run": "node bundle.js"
+  },
+  "keywords": [],
+  "author": "Bukkitstom",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "prompts": "^2.4.2"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.4",
+    "@rollup/plugin-node-resolve": "^15.2.1"
+  }
+}
