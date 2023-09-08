@@ -1,5 +1,12 @@
+#!/usr/bin/env node
 import chalk from 'chalk';
 import prompts from 'prompts';
+import yargs from 'yargs';
+import { hideBin } from 'yargs/helpers'
+const argv = yargs(hideBin(process.argv)).argv
+prompts.override(argv);
+
+console.log(argv)
 
 const questions = [
   {
