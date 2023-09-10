@@ -1,24 +1,15 @@
 {
   "name": "rebrander",
-  "version": "1.0.0",
-  "description": "",
+  "module": "index.ts",
   "type": "module",
-  "scripts": {
-    "dev": "node index.js",
-    "build": "rollup -c && chmod +x bundle.js"
+  "devDependencies": {
+    "bun-types": "latest"
   },
-  "keywords": [],
-  "author": "Bukkitstom",
-  "license": "MIT",
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
   "dependencies": {
     "chalk": "^5.3.0",
-    "prompts": "^2.4.2",
-    "rollup": "^3.29.0",
-    "yargs": "^17.7.2"
-  },
-  "devDependencies": {
-    "@rollup/plugin-commonjs": "^25.0.4",
-    "@rollup/plugin-node-resolve": "^15.2.1",
-    "rollup-plugin-preserve-shebang": "^1.0.1"
+    "prompts": "^2.4.2"
   }
 }
