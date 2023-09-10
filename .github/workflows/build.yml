@@ -16,7 +16,7 @@ jobs:
       - uses: oven-sh/setup-bun@v1
         with:
           bun-version: latest
-      - run: bun install --production --frozen-lockfile
+      - run: bun install --production
       - run: bun run build.ts
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v3.1.3
